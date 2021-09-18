@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pick_the_color">Pick the Color</string>
+    <string name="pick_color">Pick Color</string>
+    <string name="add_image">Add Image</string>
+</resources>

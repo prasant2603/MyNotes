@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FDBE38</color>
+    <color name="colorPrimary">#292929</color>
+    <color name="colorPrimaryDark">#292929</color>
+    <color name="colorSearchIcon">#DBDBDB</color>
+    <color name="colorTextHint">#7B7B7B</color>
+    <color name="colorIcons">#A4A4A4</color>
+    <color name="colorNotecolr2">#FDBE38</color>
+    <color name="colorQuickActionBackground">#2F2D23</color>
+    <color name="colorNotecolr3">#FB8A4D</color>
+    <color name="colorNotecolr4">#3DA4F3</color>
+    <color name="colorNotecolr5">#171716</color>
+    <color name="colorDelete">#FB8638</color>
+    <color name="colorgrey">#A19F9F</color>
+    <color name="black">#FF000000</color>
+    <color name="colorwhite">#FFFFFFFF</color>
+</resources>
