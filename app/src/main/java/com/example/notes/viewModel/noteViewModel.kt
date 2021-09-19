@@ -19,6 +19,10 @@ class noteViewModel(application: Application) :AndroidViewModel(application)
         repository = NoteRepository(dao)
         allNotes=repository.allNotes
     }
+    fun searchDatabase(searchQuery: String ): LiveData<List<Note>>
+    {
+        return repository.searchDatabase(searchQuery)
+    }
     fun addNote(note: Note) = viewModelScope.launch {
         repository.addNote(note)
     }

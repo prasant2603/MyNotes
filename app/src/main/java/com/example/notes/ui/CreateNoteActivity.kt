@@ -104,11 +104,11 @@ class CreateNoteActivity : AppCompatActivity()
     {
         inputTitle.setText(alreadyAvailableNote?.title)
         inputSubTitle.setText(alreadyAvailableNote?.subtitle)
-        inputNote.setText(alreadyAvailableNote?.imageUri)
+        inputNote.setText(alreadyAvailableNote?.notetext)
         dateTime.setText(alreadyAvailableNote?.datetime)
         if (alreadyAvailableNote!=null)
             findViewById<LinearLayout>(R.id.layoutDeleteNote).visibility=View.VISIBLE
-        if(alreadyAvailableNote?.imageUri!=null)
+        if(alreadyAvailableNote?.imageUri!="null")
         {
             imageUri= alreadyAvailableNote?.imageUri?.toUri()
             imageView.setImageURI(imageUri)

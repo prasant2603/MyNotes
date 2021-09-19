@@ -6,7 +6,10 @@ import com.example.notes.db.NoteDao
 
 class NoteRepository(private val noteDao: NoteDao)  {
     val allNotes: LiveData<List<Note>> = noteDao.getAllNotes()
-
+    fun searchDatabase(searchQuery: String): LiveData<List<Note>>
+    {
+        return noteDao.searchDatabase(searchQuery)
+    }
     suspend fun delete(note: Note)
     {
         noteDao.delete(note)
