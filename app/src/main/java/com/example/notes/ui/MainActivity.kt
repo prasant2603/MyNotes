@@ -1,11 +1,9 @@
 package com.example.notes.ui
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
 import android.widget.SearchView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -23,9 +21,6 @@ import java.io.Serializable
 
 class MainActivity : AppCompatActivity(), NotesListner{
     lateinit var viewModel : noteViewModel
-    val REQUEST_CODE_ADD_NOTE :Int =1
-    val REQUEST_CODE_UPDATE_NOTE :Int =2
-    val REQUEST_CODE_SHOW_NOTE: Int =3
     var noteclickedpostion :Int =-1
     lateinit var adapter: NoteAdapter
     lateinit var note: Note
@@ -78,13 +73,6 @@ class MainActivity : AppCompatActivity(), NotesListner{
                 return true
             }
         })
-
-        //Delete full DataBase
-        val delete:ImageView=findViewById(R.id.add)
-        delete.setOnClickListener {
-            viewModel.deleteAll()
-            adapter.notifyDataSetChanged()
-        }
     }
     fun SearchDatabase(query :String)
     {

@@ -54,7 +54,7 @@
     <LinearLayout
         android:id="@+id/quickActions"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_35sdp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="@dimen/_15ssp"
@@ -63,24 +63,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
-        <ImageView
-            android:id="@+id/add"
-            android:layout_width="@dimen/_23sdp"
-            android:layout_height="@dimen/_23sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:src="@drawable/ic_add" />
-        <ImageView
-            android:layout_width="@dimen/_23sdp"
-            android:layout_height="@dimen/_23sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:src="@drawable/ic_photo"
-            app:tint="@color/colorwhite" />
-        <ImageView
-            android:layout_width="@dimen/_23sdp"
-            android:layout_height="@dimen/_23sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:src="@drawable/ic_language"
-            app:tint="@color/colorwhite" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
